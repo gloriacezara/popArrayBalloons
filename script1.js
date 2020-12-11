@@ -18,3 +18,13 @@ function removeEvent(e){
 
     })
 };
+
+function checkAllPopped(){
+    if (popped === 24){
+        console.log('all popped!');
+        let gallery = document.querySelector('#balloon-gallery');
+        let message = document.querySelector('#yay-no-balloons');
+        gallery.innerHTML = '';
+        message.style.display = 'block';
+    }
+};
